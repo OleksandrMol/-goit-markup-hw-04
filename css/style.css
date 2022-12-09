@@ -11,6 +11,7 @@
 
   --background-section: #2f303a;
   --secondary-backgroun: #f5f4fa;
+  --background-hero: #c4c4c4;
 
   --border-color: #ececec;
   --second-border-color: #eeeeee;
@@ -195,6 +196,7 @@ header {
   padding: 200px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background-team.jpg);
+  background-color: var(--background-hero);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -352,7 +354,6 @@ header {
   margin-bottom: 50px;
   margin-top: 0;
 }
-
 .title-list {
   display: flex;
   gap: 30px;
@@ -361,13 +362,14 @@ header {
 .title-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.title-item:hover,
-.title-item:focus {
+.title-link {
+  display: block;
+  color: var(--text-color);
+}
+.title-link:hover,
+.title-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.title-link {
-  color: var(--text-color);
 }
 .title-contener {
   padding: 20px 24px;
@@ -441,6 +443,8 @@ header {
 .footer-headline {
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.142;
   color: var(--accent-color);
 }
 .footer-sosial-list {
